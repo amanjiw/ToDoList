@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.navigationBar {
+  width: 100%;
+  height: 3.5rem;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.301);
+}
+.navigationBar h1 {
+  width: 9vw;
+  height: 100%;
+  padding: 12px 25px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, #76b6ee, #6927a0);
+  padding-top: 10em;
+  width: 100%;
+  height: 100vh;
+}
+main .secion-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50px;
+}
+main .secion-input h1 {
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+main .secion-input form {
+  display: flex;
+  flex-direction: column;
+}
+main .secion-input form input {
+  width: 35em;
+  height: 3em;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 19px;
+  font-size: 15px;
+  padding-left: 10px;
+  color: #6927a0;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.301);
+  color: #fff;
+}
+main .secion-input form input::placeholder {
+  color: rgba(255, 255, 255, 0.301);
+}
+main .secion-input form input:focus {
+  border: 2px solid #431d63;
+  outline: none;
+}
+main .secion-input form input:focus::placeholder {
+  color: #42576b;
+}
+main .secion-input form button {
+  width: 35em;
+  height: 3em;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 19px;
+  font-size: 15px;
+  color: #42576b;
+  font-weight: 800;
+  transform: translateY(-2px);
+  box-shadow: 1px 6px 30px #431d63;
+}
+main .secion-input form button:active {
+  box-shadow: 1px 4px 10px #431d63;
+  transform: translateY(0px);
+}
+main .section-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .section-list h1 {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+main .section-list .todos {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(142, 151, 236, 0.39);
+  border-radius: 10px;
+  padding: 19px;
+  width: 39.5em;
+  height: 85%;
+  overflow-y: scroll;
+}
+main .section-list .todos::-webkit-scrollbar {
+  border-radius: 5px;
+}
+main .section-list .todos::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: #6927a0;
+}
+main .section-list .todo {
+  width: 30em;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.301);
+  border-radius: 20px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+main .section-list .todo .todo-header {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  font-size: 35px;
+  font-weight: 600;
+  background-image: linear-gradient(to top right, #4791bd, #8f65c5);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+main .section-list .todo .doname {
+  padding: 10px;
+}
+main .section-list .todo .dowhat {
+  padding: 10px;
+}
+main .section-list .todo .dowhen {
+  padding: 10px;
+}
